@@ -28,7 +28,7 @@
             ><span class="logo-web">Web</span>Studio
           </a>
           <ul class="site-nav list">
-            <li class="item">
+            <li class="item ">
               <a href="./index.html" class="link current">Студія</a>
             </li>
             <li class="item">
@@ -60,7 +60,7 @@
       <!--Шапка-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button primary" type="button">Замовити послугу</button>
+        <button class="button primary" type="button" data-modal-open>Замовити послугу</button>
       </section>
       <!--Особливості-->
       <section class="section">
@@ -123,13 +123,17 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list first-cards">
             <li class="cards first">
-              <img
+              
+                <img
                 class="img"
                 src="./images/box1.jpg"
                 alt="компʼютер"
                 width="370"
               />
+            
+              <p class="lable">Десктопні додатки</p>
             </li>
+            
             <li class="cards first">
               <img
                 class="img"
@@ -137,6 +141,7 @@
                 alt="телефон"
                 width="370"
               />
+              <p class="lable">Мобільні додатки</p>
             </li>
             <li class="cards first">
               <img
@@ -145,6 +150,7 @@
                 alt="планшет"
                 width="370"
               />
+              <p class="lable">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -438,5 +444,15 @@
         </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="close-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
